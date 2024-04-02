@@ -1,0 +1,52 @@
+{
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "type": "AdaptiveCard",
+  "version": "1.3",
+  "body": [
+    {
+      "type": "Image",
+      "url": "https://www.finsmes.com/wp-content/uploads/2022/05/esw.jpeg",
+      "size": "Medium",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "TextBlock",
+      "text": "Welcome to our Returns Bot Assistant!",
+      "weight": "Bolder",
+      "size": "Medium",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "spacing": "Medium"
+    },
+    {
+      "type": "TextBlock",
+      "text": "How can we assist you today?",
+      "wrap": true,
+      "horizontalAlignment": "Center",
+      "spacing": "Small"
+    }
+  ],
+  "actions": [
+    {
+      "type": "Action.Submit",
+      "title": "Create a Return Order",
+      "data": {
+        "action": "createReturnOrder"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Track Return",
+      "data": {
+        "action": "trackReturn"
+      }
+    },
+    {
+      "type": "Action.Submit",
+      "title": "Send Feedback",
+      "data": {
+        "action": "sendFeedback"
+      }
+    }
+  ]
+}
